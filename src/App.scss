@@ -1,0 +1,492 @@
+@import "~bootswatch/dist/cyborg/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/cyborg/bootswatch";
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat&display=swap');
+
+
+main {
+  
+  font-family: 'Karla', sans-serif;
+}
+h1, h2, h3, h4, h5, .brand-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+
+}
+
+
+
+.app {
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and ( min-width: 768px) {
+  .nav-vertical {
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    height: 100%;
+    width: 25%;
+  }
+}
+
+@media screen and ( min-width: 992px) {
+  .nav-vertical {
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    height: 100%;
+    width: 16.67%
+  }
+}
+
+.side-nav {
+  
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.menu {
+
+}
+
+
+ 
+
+#menu-links[data-active-index="0"]:hover > #menu-background-pattern {
+  background-position: 0% -25%;
+  opacity: .15;
+  transition: background-size 2s, background-position 2s, opacity 2s;;
+  
+}
+#menu-links[data-active-index="1"]:hover > #menu-background-pattern {
+  background-position: 0% -50%;
+  opacity: .15;
+  transition: background-size 2s, background-position 2s, opacity 2s;;
+ 
+}
+#menu-links[data-active-index="2"]:hover > #menu-background-pattern {
+  background-position: 0% -75%;
+  opacity: .15;
+  transition: background-size 2s, background-position 2s, opacity 2s;;
+
+}
+#menu-links[data-active-index="3"]:hover > #menu-background-pattern {
+  background-position: 0% -100%;
+  opacity: .15;
+  transition: background-size 2s, background-position 2s, opacity 2s;;
+
+  
+}
+#menu-links[data-active-index="4"]:hover > #menu-background-pattern {
+  background-position: 0% -123%;
+  opacity: .15;
+  transition: background-size 2s, background-position 2s, opacity 2s;;
+  
+}
+
+.cover-div {
+
+  height: 100vh;
+}
+
+
+
+
+
+#menu-background-pattern {
+
+  background-image: url(/images/design3.jpg);
+  background-position: 0% -25%;
+  background-size: 55vmin 55vmin;
+  height: 100%;
+  width: 100%;
+  opacity: .08;
+ 
+    filter: grayscale(100%) brightness(75%);
+  
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+
+ transition: background-size 2s, background-position 2s, opacity 2s;
+ ;
+}
+
+
+.jumbotron {
+  height: 600px;
+  text-shadow: 2px 2px black;
+  position: relative;
+  border-bottom: 1px solid black;
+
+}
+
+
+.jumbotron::before {
+  content: "";
+  background-image: url(/images/colorado/col1.png);
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; */
+  /* background-attachment: fixed; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(0%) brightness(40%);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.jumbo-flex-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-button-wrapper {
+  width: 100%;
+}
+#skills-education-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  height: 600px;
+  
+}
+
+#skills-education-wrapper:before {
+  content: "";
+  background-image: url(/images/colorado/col2.jpg);
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(0%) brightness(40%);
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: -1;
+  
+}
+#skills {
+  
+}
+
+.fa-icon {
+  transform: translateY(10%);
+}
+
+
+.link-item {
+  color: #adafae;
+  background-image: linear-gradient(
+    to right,
+    #d3d3d3,
+    #d3d3d3 50%,
+    #fff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-item:before {
+  content: '';
+  background: #d3d3d3;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-icon {
+ color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #d3d3d3,
+    #d3d3d3 50%,
+    #fff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-icon:before {
+  content: '';
+  background: #d3d3d3;
+  display: block;
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-item:hover {
+ background-position: 0;
+ 
+}
+
+.link-item:hover::before {
+  width:100%;
+}
+
+.link-icon:hover {
+  background-position: 0;
+  color: #d3d3d3
+ }
+ 
+ .link-icon:hover::before {
+   width:100%;
+ }
+
+
+
+
+#profile-picture {
+  max-width: 200px;
+  border: 1px solid white;
+  border-radius: 100%;
+  filter: grayscale(100%)
+ 
+}
+
+.jumbo-text {
+  text-shadow: 3px 2px black;
+}
+
+.about-text {
+  max-width: 700px;
+  margin: auto
+}
+
+.picture-spacer {
+  height: 170px;
+  background-color: #0A0A0A
+  
+ 
+  
+}
+
+
+
+.project-0 {
+  position: relative;
+}
+
+.project-0:before {
+  content: "";
+  background-image: url(/images/colorado/col3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(0%) brightness(40%);
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: -1;
+}
+
+.project-1 {
+  position: relative;
+}
+
+.project-1:before {
+  content: "";
+  background-image: url(/images/colorado/col4.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(0%) brightness(40%);
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: -1;
+}
+
+.project-2 {
+  position: relative;
+}
+
+.project-2:before {
+  content: "";
+  background-image: url(/images/colorado/col5.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(0%) brightness(40%);
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: -1;
+}
+
+
+.project-link {
+  height: 58px;
+  
+}
+
+.project-image-desktop {
+  width: 290px;
+  height: auto;
+}
+.project-image-mobile {
+  width: 134px;
+  height: auto;
+}
+
+@media screen and ( min-width: 450px) {
+  .project-image-desktop {
+    width: 400px;
+    height: auto;
+  }
+  .project-image-mobile {
+    width: 185px;
+    height: auto;
+  }
+  }
+
+  @media screen and ( min-width: 600px) {
+    .project-image-desktop {
+      width: 500px;
+      height: auto;
+    }
+    .project-image-mobile {
+      width: 232px;
+      height: auto;
+    }
+    }
+
+
+@media screen and ( min-width: 992px) {
+.project-image-desktop {
+  width: 500px;
+  height: auto;
+ 
+}
+.project-image-mobile {
+  width: 232px;
+  height: auto;
+}
+}
+
+
+
+
+.email-form {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.content-section {
+  filter: drop-shadow(8px 8px 10px hsl(36, 92%, 10%));
+  background-color: white;
+  border-radius: 10px;
+  transition: 2s;
+}
+
+.content-section:hover,
+.content-section:focus {
+  filter: drop-shadow(-50px 50px 30px hsl(36, 92%, 10%));
+}
+
+.animated-section {
+  background: radial-gradient(circle, rgba(187, 189, 200, 1) 21%, rgba(230, 214, 217, 1) 96%);
+  transition: 0.5s ease-out; 
+}
+
+.animated-section:hover,
+.animated-section:focus {
+  transform: rotate3d(1, 1, 0, 15deg); 
+}
+
+#education a {
+  color: #fff;
+}
+
+#education {
+  color: #fff;
+}
+
+.light-text {
+  color: #fff;
+}
+
+
+footer {
+ 
+  color: white;
+  text-align: right;
+  padding: 1em;
+}
+
+#contact-me {
+  
+}
+
+
+.shadow-content-section {
+  filter: drop-shadow(8px 8px 10px hsl(36, 92%, 10%));
+  background-color: white;
+  border-radius: 10px;
+  transition: 2s;
+  background: radial-gradient(circle, rgba(187, 189, 200, 1) 21%, rgba(230, 214, 217, 1) 96%);
+}
+
+.shadow-content-section:hover,
+.shadow-content-section:focus {
+  filter: drop-shadow(-50px 50px 30px hsl(36, 92%, 10%)) drop-shadow(50px 50px 30px hsl(36, 92%, 10%));
+  transition-duration: 2s;
+}
+
+.error-message {
+  color:#f44336;
+}
+
+.success-message {
+  color:#66bb6a;
+}
