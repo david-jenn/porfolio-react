@@ -12,7 +12,7 @@ function Education() {
           </div>
 
           <div>Graduated: 2022</div>
-          <div class="fst-italic light-text">Associates Degree of Application and Web Development</div>
+          <div class="fst-italic light-text">Associate in Application and Web Development</div>
         </div>
       </div>
       </div>

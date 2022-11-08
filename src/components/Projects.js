@@ -24,7 +24,7 @@ const gameLibrary = {
   title: 'Game Library',
   date: '01/2022 - 04/2022',
   stack: ['Android SDK', 'Java', 'Firebase'],
-  description: 'This Android application simulates a video game store were users can add games to a wish list or library and see relevant listings on eBay',
+  description: 'This Android application simulates a video game store where users can add games to a wish list or library and see relevant listings on eBay.',
   githubLink: 'https://github.com/david-jenn/game-library',
   imageDesktop: gameLibraryDesktop,
   imageMobile: gameLibraryMobile,
