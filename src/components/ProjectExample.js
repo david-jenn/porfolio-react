@@ -23,11 +23,16 @@ function ProjectExample({ project }) {
         <div className="d-lg-flex justify-content-center">
           <div className="mb-3 me-lg-3">
             <div class="link-section d-flex justify-content-start align-items-center project-link">
-              <div className="me-3">
-                <a class="fst-italic light-text link-item" rel="noreferrer" target="_blank" href={project.projectLink}>
+            {project.projectLink &&  <div className="me-3">
+                <a class="fst-italic light-text link-item pe-1 " rel="noreferrer" target="_blank" href={project.projectLink}>
                   {project.title}
                 </a>
-              </div>
+              </div> }
+              {!project.projectLink &&  <div className="me-3">
+                
+                  {project.title}
+                
+              </div> }
               <div className="">
                 <span className="fa-icon">
                   <a className="fs-4 light-text link-icon" rel="noreferrer" target="_blank" href={project.githubLink}>

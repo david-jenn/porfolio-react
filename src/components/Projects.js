@@ -24,8 +24,7 @@ const gameLibrary = {
   title: 'Game Library',
   date: '01/2022 - 04/2022',
   stack: ['Android SDK', 'Java', 'Firebase'],
-  description: 'This project simulates a video game store were users can add games to a wish list or library and see relevant listings on eBay',
-  projectLink: '/',
+  description: 'This Android application simulates a video game store were users can add games to a wish list or library and see relevant listings on eBay',
   githubLink: 'https://github.com/david-jenn/game-library',
   imageDesktop: gameLibraryDesktop,
   imageMobile: gameLibraryMobile,
@@ -46,15 +45,15 @@ const issueTracker = {
 function Projects() {
   return (
     <div id="projects" class="mb-3">
-      <div className="row picture-spacer d-flex align-items-center p-3">
-        <h2 class="mb-3 shadow-text text-dark">Projects</h2>
+      <div className="row picture-spacer-sm d-flex align-items-center p-3">
+        <h2 class=" shadow-text text-dark">Projects</h2>
       </div>
 
       <div class="">
         <ProjectExample project={talkRooms} />
-        <div className="picture-spacer row"></div>
+        <div className="picture-spacer-sm row"></div>
         <ProjectExample project={gameLibrary} />
-        <div className="picture-spacer row"></div>
+        <div className="picture-spacer-sm row"></div>
         <ProjectExample project={issueTracker} />
       </div>
     </div>
