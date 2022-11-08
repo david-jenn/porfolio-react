@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+
 function NavbarVertical() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
