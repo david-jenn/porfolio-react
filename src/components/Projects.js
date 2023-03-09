@@ -13,7 +13,7 @@ const talkRooms = {
   date: '07/2022 - 10/2022',
   stack: ['React.js', 'Node.js', 'Express.js', 'MongoDb', 'Socket.io'],
   description: 'This project is a real time chat application with friends lists and preserved messages.',
-  projectLink: 'https://talk-rooms-david-jenn.herokuapp.com',
+  projectLink: 'https://talk-rooms-david-jenn.onrender.com',
   githubLink: 'https://github.com/david-jenn/talk-rooms-client',
   imageDesktop: talkRoomsDesktop,
   imageMobile: talkRoomsMobile,
